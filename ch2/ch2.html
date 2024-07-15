@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>环游世界</title>
+  <style>
+    .apdiv {
+      position: absolute;
+    }
+    .image {
+      width: 250px;
+      height: 150px;
+    }
+    .text-layer {
+      position: absolute;
+      font-size: 60px;
+      width: 67px;
+      height: 67px;
+    }
+  </style>
+</head>
+<body>
+  <div id="layer1" class="apdiv" style="left: 70px; top: 40px; z-index: 2;">
+    <img src="1.jpg" alt="图片1" class="image">
+  </div>
+  <div id="layer2" class="apdiv" style="left: 180px; top: 150px; z-index: 1;">
+    <img src="2.jpg" alt="图片2" class="image">
+  </div>
+  <div id="layer3" class="apdiv" style="left: 330px; top: 260px; z-index: 3;">
+    <img src="3.jpg" alt="图片3" class="image">
+  </div>
+  <div id="layer4" class="text-layer" style="left: 360px; top: 0px;">
+    <p>环</p>
+  </div>
+  <div id="layer5" class="text-layer" style="left: 480px; top: 90px;">
+    <p>游</p>
+  </div>
+  <div id="layer6" class="text-layer" style="left: 210px; top: 260px;">
+    <p>世</p>
+  </div>
+  <div id="layer7" class="text-layer" style="left: 80px; top: 150px;">
+    <p>界</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,719 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>创建链接</title>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_popupMsg(msg) { //v1.0
+  alert(msg);
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+.style1 {color: #FF0000}
+.style2 {color: #FF0000; font-weight: bold; }
+-->
+</style>
+<link href="../image/sclass.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="MM_preloadImages('image/button-z2.jpg','../image/button-z2.jpg','../image/button-y2.jpg','../image/button-yi2.jpg','../image/button-x2.jpg','../image/button-f2.jpg','../image/button-d2.jpg','../image/button-g2.jpg','../image/button-l2.jpg','../image/button-s2.jpg')">
+<table cellspacing=0 cellpadding=0 width=760 background=file:///G|/实例素材与结果/DWMX2004/CH06/images/bei.gif 
+border=0 align="center">
+  <tbody>
+    <tr>
+      <td width=188><div align=center><img src="../image/logo.jpg" alt="我的足球网" width="150" height="50" longdesc="http://zqnews.126.com"></div></td>
+      <td width=464 height="70" background="../image/bei.gif">&nbsp;</td>
+      <td nowrap width=108><div align="center">
+        <p>□设为首页<br>
+          □收藏本站<br>
+          □<a href="mailto:gyl123@163.com">联系我们</a></p>
+      </div>
+          <spacer type="block" width="14"><spacer type="block" width="4"></td>
+    </tr>
+  </tbody>
+</table>
+<table height=56 cellspacing=0 cellpadding=0 width=760 border=0 align="center">
+  <tbody>
+    <tr>
+      <td width=104 height=52 rowspan=3 align="left" valign="top" noWrap><img height=52 
+      src="../image/Tbar1.gif" width=104></td>
+      <td height=6 colspan="5" noWrap background="../image/Tbar3.gif"><img height=6 
+      src="image1/Tbar3.gif" width=1></td>
+      <td width=195 height=52 rowspan=3 align="right" valign="top" noWrap><img height=52 
+      src="../image/Tbar2.gif" width=195></td>
+    </tr>
+    <tr>
+      <td noWrap width=100 bgcolor=#d6f3b6 height=13><div align=center><a href="../index.htm">首 页</a> </div></td>
+      <td noWrap width=100 bgcolor=#d6f3b6><div align="center"><a href="../aboutme/me.htm">我与足球</a></div></td>
+      <td noWrap width=115 bgcolor=#d6f3b6><div align="center"><a href="../photo/photo.htm">足球明星</a></div></td>
+      <td noWrap width=115 bgcolor=#d6f3b6><div align="center">足球新闻</div></td>
+      <td noWrap width=115 bgcolor=#d6f3b6><div align="center"><a href="a1.rar">资源下载</a></div></td>
+    </tr>
+    <tr>
+      <td height=30 colspan="5" valign="top" noWrap background="../image/Tbar4.gif"><img height=30 
+      src="file:///G|/实例素材与结果/DWMX2004/CH06/images/Tbar4.gif" width=1 align="baseline"></td>
+    </tr>
+  </tbody>
+</table>
+<table width="760" border="1" align="center" cellpadding="0" cellspacing="0" bordercolor="#ADE373">
+  <tr>
+    <td width="153" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><img src="../image/nbar6.gif" alt="新闻" width="153" height="20"></td>
+            </tr>
+            <tr>
+              <td><img src="../image/tbar.gif" alt="1" width="153" height="12"></td>
+            </tr>
+            <tr>
+              <td align="center" valign="top"><table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td><a href="#zh" target="_top" onClick="MM_nbGroup('down','group1','a1','../image/button-z2.jpg',1)" onMouseOver="MM_nbGroup('over','a1','','',1)" onMouseOut="MM_nbGroup('out')"><img src="../image/button-z1.jpg" alt="综合新闻" name="a1" width="126" height="30" border="0" onload=""></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#yc" target="_top" onClick="MM_nbGroup('down','group1','a2','../image/button-y2.jpg',1)" onMouseOver="MM_nbGroup('over','a2','','',1)" onMouseOut="MM_nbGroup('out')"><img src="../image/button-y1.jpg" alt="英超新闻" name="a2" width="126" height="30" border="0" onload=""></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#yj" target="_top" onClick="MM_nbGroup('down','group1','a3','../image/button-yi2.jpg',1)" onMouseOver="MM_nbGroup('over','a3','','',1)" onMouseOut="MM_nbGroup('out')"><img src="../image/button-yi1.jpg" alt="意甲新闻" name="a3" width="126" height="30" border="0" onload=""></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#xj" target="_top" onClick="MM_nbGroup('down','group1','a4','../image/button-x2.jpg',1)" onMouseOver="MM_nbGroup('over','a4','','',1)" onMouseOut="MM_nbGroup('out')"><img src="../image/button-x1.jpg" alt="西甲新闻" name="a4" width="126" height="30" border="0" onload=""></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#fj" target="_top" onClick="MM_nbGroup('down','group1','a5','../image/button-f2.jpg',1)" onMouseOver="MM_nbGroup('over','a5','','',1)" onMouseOut="MM_nbGroup('out')"><img src="../image/button -f1.jpg" alt="法甲新闻" name="a5" width="126" height="30" border="0" onload=""></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#dj" target="_top" onClick="MM_nbGroup('down','group1','a6','../image/button-d2.jpg',1)" onMouseOver="MM_nbGroup('over','a6','','',1)" onMouseOut="MM_nbGroup('out')"><img src="../image/button-d1.jpg" alt="德甲新闻" name="a6" width="126" height="30" border="0" onload=""></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#gjb" target="_top" onClick="MM_nbGroup('down','group1','a7','../image/button-g2.jpg',1)" onMouseOver="MM_nbGroup('over','a7','','',1)" onMouseOut="MM_nbGroup('out')"><img src="../image/button-g1.jpg" alt="冠军杯新闻" name="a7" width="126" height="30" border="0" onload=""></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#lmb" target="_top" onClick="MM_nbGroup('down','group1','a8','../image/button-l2.jpg',1)" onMouseOver="MM_nbGroup('over','a8','','',1)" onMouseOut="MM_nbGroup('out')"><img src="../image/button-l1.jpg" alt="联盟杯新闻" name="a8" width="126" height="30" border="0" onload=""></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#sjb" target="_top" onClick="MM_nbGroup('down','group1','a9','../image/button-s2.jpg',1)" onMouseOver="MM_nbGroup('over','a9','','',1)" onMouseOut="MM_nbGroup('out')"><img src="../image/button-s1.jpg" alt="世界杯新闻" name="a9" width="126" height="30" border="0" onload=""></a></td>
+                </tr>
+              </table>
+              </td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td><table width="73%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><img src="../image/nbar8.gif" alt="公告" width="153" height="20"></td>
+            </tr>
+            <tr>
+              <td height="12"><img src="../image/tbar.gif" alt="1" width="153" height="12"></td>
+            </tr>
+            <tr>
+              <td height="135"><div align="center">
+            <MARQUEE class=9pointblack1 onmouseover=this.stop() onmouseout=this.start() scrollAmount=2 scrollDelay=55 direction=up width="100%" height=135 align="middle">
+            <a href="http://www.cncss.com">网站开通通知！</a>
+            </MARQUEE>
+        </div></td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><img src="../image/nbar4.gif" alt="调查" width="153" height="20"></td>
+            </tr>
+            <tr>
+              <td><img src="../image/tbar.gif" alt="1" width="153" height="12"></td>
+            </tr>
+            <tr>
+              <td><p align="left">你认为本站的制作水平如何：</p>
+                <form name="form1" action="">
+                  <div align="left">
+                    <input type="radio" name="radiobutton" value="1" onClick="MM_popupMsg('谢谢您的鼓励！我将继续努力！')">
+                    非常好！ <br>
+                      <input type="radio" name="radiobutton" value="2" onClick="MM_popupMsg('我将尽力提高制作水准！')">
+                    一般！ <br>
+                      <input type="radio" name="radiobutton" value="3" onClick="MM_popupMsg('看来我还要好好学习才行！')">
+                    太差了！
+                  </div>
+                </form></td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><img src="../image/nbar2.gif" alt="链接" width="153" height="20"></td>
+            </tr>
+            <tr>
+              <td><img src="../image/tbar.gif" alt="1" width="153" height="12"></td>
+            </tr>
+            <tr>
+              <td><div align="center">
+                <form name="form2">
+                  <select name="menu1" onChange="MM_jumpMenu('parent',this,0)">
+                    <option value="http://sports.com.cn">国际足球</option>
+                    <option value="http://www.espnstar.com.cn">ESPNSTAR中文网</option>
+                    <option value="http://www.chinesewings.com">华翼网</option>
+                    <option value="http://www.soccerchina.com">多来米中文网</option>
+                    <option value="http://www.miqiu.com">迷球网</option>
+                      </select>
+                </form>
+                </div></td>
+            </tr>
+          </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td><img src="../image/m028.gif" alt="地图" width="153" height="104" border="0" usemap="#Map"></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+    <td align="center" valign="top"><div align="center">
+      <table width="100%"  border="1" cellpadding="0" cellspacing="0" bordercolor="#91DF3D">
+          <tr>
+            <td><table width="100%" cellpadding="0" cellspacing="0">
+              <TR>
+                <TD vAlign="top" align="left"><DIV>
+                    <TABLE cellSpacing="2" width="100%" border="0">
+                      <TBODY>
+                        <TR>
+                          <TD vAlign="top" width="100%"><TABLE cellPadding="2" width="100%" border="0">
+                              <TBODY>
+                                <TR>
+                                  <TD height="23" vAlign="top" bgcolor="#EFFFE7"><div align="center"><strong><a name="zh"></a>足坛综合新闻</strong></div></TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="54" width="10" height="10" border="0"> <A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060301215779058&tpe=football" target="_blank">亚洲杯预赛-陶伟难救主 中国国足1-2负伊拉克</A> [03-01]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="53" width="10" height="10" border="0"> <A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060301215278759&tpe=football" target="_blank">贝利上海吐苦水:别总拿我跟马拉多纳比 </A>[03-01]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="52" width="10" height="10" border="0"> <A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060301214778423&tpe=football" target="_blank">亚洲杯预赛首场不敌阿联酋 阿曼主帅被解雇</A> [03-01]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="51" width="10" height="10" border="0"> <A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060227232484267&tpe=football" target="_blank">比乙-董方卓缺阵 安特卫普斩强敌逼近升级区</A> [02-27]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="50" width="10" height="10" border="0"> <A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060223222780836&tpe=football" target="_blank">中国国足敲定西征23人名单 谢晖李金羽9人离开</A> [02-23]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"> <A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060221192369825&tpe=football" target="_blank">柳泽敦返回J联赛 意甲之旅可能就此结束</A> [02-21]</TD>
+                                </TR>
+                              </TBODY>
+                          </TABLE></TD>
+                        </TR>
+                        <TR>
+                          <TD colSpan="2"><TABLE width="100%">
+                              <TBODY>
+                                <TR>
+                                  <TD width="71%" align="left"><div align="right"><A href="http://www.chinesewings.com/eurofootball/news/football/index2.shtml" target="_blank">2</A> <A href="http://www.chinesewings.com/eurofootball/news/football/index3.shtml" target="_blank">3</A> <A href="http://www.chinesewings.com/eurofootball/news/football/index4.shtml" target="_blank">4</A> <A href="http://www.chinesewings.com/eurofootball/news/football/index5.shtml" target="_blank">5</A> <A href="http://www.chinesewings.com/eurofootball/news/football/index6.shtml" target="_blank">6</A> <A href="http://www.chinesewings.com/eurofootball/news/football/index7.shtml" target="_blank">7</A> <A href="http://www.chinesewings.com/eurofootball/news/football/index8.shtml" target="_blank">8</A> <A href="http://www.chinesewings.com/eurofootball/news/football/index9.shtml" target="_blank">9</A> <A href="http://www.chinesewings.com/eurofootball/news/football/index10.shtml" target="_blank">10</A> <A href="http://www.chinesewings.com/eurofootball/news/football/index11.shtml" target="_blank">11</A> <A href="http://www.chinesewings.com/eurofootball/news/football/index12.shtml" target="_blank">12</A> <A href="http://www.chinesewings.com/eurofootball/news/football/index13.shtml" target="_blank">13</A> <A href="http://www.chinesewings.com/eurofootball/news/football/index14.shtml" target="_blank">14</A> <A href="http://www.chinesewings.com/eurofootball/news/football/index15.shtml" target="_blank">15</A> <A href="http://www.chinesewings.com/eurofootball/news/football/index16.shtml" target="_blank">16</A> <A href="http://www.chinesewings.com/eurofootball/news/football/index17.shtml" target="_blank">17</A> <A href="http://www.chinesewings.com/eurofootball/news/football/index18.shtml" target="_blank">18</A> <A href="http://www.chinesewings.com/eurofootball/news/football/index19.shtml" target="_blank">19</A></div></TD>
+                                  <TD width="29%" align="right"><A href="http://www.chinesewings.com/eurofootball/news/football/" target="_blank">&gt;&gt;   更多综合新闻</A></TD>
+                                </TR>
+                              </TBODY>
+                          </TABLE></TD>
+                        </TR>
+                      </TBODY>
+                    </TABLE>
+                </DIV></TD>
+              </TR>
+              <TR>
+                <TD vAlign="center" borderColor="#ffffff" align="middle" bgColor="#ffffff"><DIV align="center">
+                    <TABLE cellSpacing="1" cellPadding="4" width="100%" border="0">
+                      <TBODY>
+                        <TR>
+                          <TD vAlign="center" align="middle" width="100%" bgColor="#EFFFE7"><div align="center"><strong><a name="yc"></a>英超新闻</strong></div></TD>
+                        </TR>
+                      </TBODY>
+                    </TABLE>
+                </DIV></TD>
+              </TR>
+              <TR>
+                <TD vAlign="top" align="left"><DIV>
+                    <TABLE cellSpacing="2" width="100%" border="0">
+                      <TBODY>
+                        <TR>
+                          <TD vAlign="top" width="100%"><TABLE cellPadding="2" width="100%" border="0">
+                              <TBODY>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060303210876125&tpe=england" target="_blank">阿什利科尔至少休战3周 阿森纳多名伤员有望复出</A> [03-03]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060301215278726&tpe=england" target="_blank">曼联惊爆范尼弗格森有隙 传荷兰射手王面临被卖</A> [03-01]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060301214978560&tpe=england" target="_blank">切尔西赢得巴拉克 周薪12万英镑创造记录</A> [03-01]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060301214778447&tpe=england" target="_blank">球员怨声载道 切尔西将更换斯坦福球场草皮</A> [03-01]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060227233284756&tpe=england" target="_blank">图文:英格兰联赛杯-鲁尼梅开二度   曼联4-0维甘获冠军</A> [02-27]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060227232684395&tpe=england" target="_blank">英超-利物浦主场1-0胜曼城 科维尔助红军三连胜</A> [02-27]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060227230282934&tpe=england" target="_blank">英超-受困欧冠后遗症 阿森纳0-1负布莱克本</A> [02-27]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060227230182877&tpe=england" target="_blank">英超-兰帕德罗本建功 切尔西2-0胜朴茨茅斯</A> [02-27]</TD>
+                                </TR>
+                              </TBODY>
+                          </TABLE></TD>
+                        </TR>
+                        <TR>
+                          <TD colSpan="2"><TABLE width="100%">
+                              <TBODY>
+                                <TR>
+                                  <TD width="71%" align="left"><div align="right"><A href="http://www.chinesewings.com/eurofootball/news/england/index2.shtml" target="_blank">2</A> <A href="http://www.chinesewings.com/eurofootball/news/england/index3.shtml" target="_blank">3</A> <A href="http://www.chinesewings.com/eurofootball/news/england/index4.shtml" target="_blank">4</A> <A href="http://www.chinesewings.com/eurofootball/news/england/index5.shtml" target="_blank">5</A> <A href="http://www.chinesewings.com/eurofootball/news/england/index6.shtml" target="_blank">6</A> <A href="http://www.chinesewings.com/eurofootball/news/england/index7.shtml" target="_blank">7</A> <A href="http://www.chinesewings.com/eurofootball/news/england/index8.shtml" target="_blank">8</A> <A href="http://www.chinesewings.com/eurofootball/news/england/index9.shtml" target="_blank">9</A> <A href="http://www.chinesewings.com/eurofootball/news/england/index10.shtml" target="_blank">10</A> <A href="http://www.chinesewings.com/eurofootball/news/england/index11.shtml" target="_blank">11</A> <A href="http://www.chinesewings.com/eurofootball/news/england/index12.shtml" target="_blank">12</A> <A href="http://www.chinesewings.com/eurofootball/news/england/index13.shtml" target="_blank">13</A> <A href="http://www.chinesewings.com/eurofootball/news/england/index14.shtml" target="_blank">14</A> <A href="http://www.chinesewings.com/eurofootball/news/england/index15.shtml" target="_blank">15</A> <A href="http://www.chinesewings.com/eurofootball/news/england/index16.shtml" target="_blank">16</A> <A href="http://www.chinesewings.com/eurofootball/news/england/index17.shtml" target="_blank">17</A> <A href="http://www.chinesewings.com/eurofootball/news/england/index18.shtml" target="_blank">18</A> <A href="http://www.chinesewings.com/eurofootball/news/england/index19.shtml" target="_blank">19</A></div></TD>
+                                  <TD width="29%" align="right"><A href="http://www.chinesewings.com/eurofootball/news/england/" target="_blank">&gt;&gt;   更多英超新闻</A></TD>
+                                </TR>
+                              </TBODY>
+                          </TABLE></TD>
+                        </TR>
+                      </TBODY>
+                    </TABLE>
+                </DIV></TD>
+              </TR>
+              <TR>
+                <TD vAlign="center" borderColor="#ffffff" align="middle" bgColor="#ffffff"><DIV align="center">
+                    <TABLE cellSpacing="1" cellPadding="4" width="100%" border="0">
+                      <TBODY>
+                        <TR>
+                          <TD vAlign="center" align="middle" width="100%" bgColor="#EFFFE7"><div align="center"><strong><a name="yj"></a>意甲新闻</strong></div></TD>
+                        </TR>
+                      </TBODY>
+                    </TABLE>
+                </DIV></TD>
+              </TR>
+              <TR>
+                <TD vAlign="top" align="left"><DIV>
+                    <TABLE cellSpacing="2" width="100%" border="0">
+                      <TBODY>
+                        <TR>
+                          <TD vAlign="top" width="100%"><TABLE cellPadding="2" width="100%" border="0">
+                              <TBODY>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060227233484878&tpe=italy" target="_blank">意甲-罗马2-0完胜拉齐奥 11连胜创新纪录</A> [02-27]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060227233384834&tpe=italy" target="_blank">意甲-国际米兰主场3比1击败乌迪内斯 终结4场不胜</A> [02-27]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060227232384223&tpe=italy" target="_blank">意甲-上演超级逆转 佛罗伦萨客场告捷逼国际米兰</A> [02-27]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060223222280523&tpe=italy" target="_blank">扇对手耳光 国际米兰巴西球星阿德里亚诺停赛两场</A> [02-23]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060223221680176&tpe=italy" target="_blank">手术成功只待恢复 乐观托蒂仍然渴望世界杯</A> [02-23]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060220222180491&tpe=italy" target="_blank">尤文图斯行贿争冠未如愿 佩鲁贾前主席再曝丑闻 </A>[02-20]</TD>
+                                </TR>
+                              </TBODY>
+                          </TABLE></TD>
+                        </TR>
+                        <TR>
+                          <TD colSpan="2"><TABLE width="100%">
+                              <TBODY>
+                                <TR>
+                                  <TD width="71%" align="left"><div align="right"><A href="http://www.chinesewings.com/eurofootball/news/italy/index2.shtml" target="_blank">2</A> <A href="http://www.chinesewings.com/eurofootball/news/italy/index3.shtml" target="_blank">3</A> <A href="http://www.chinesewings.com/eurofootball/news/italy/index4.shtml" target="_blank">4</A> <A href="http://www.chinesewings.com/eurofootball/news/italy/index5.shtml" target="_blank">5</A> <A href="http://www.chinesewings.com/eurofootball/news/italy/index6.shtml" target="_blank">6</A> <A href="http://www.chinesewings.com/eurofootball/news/italy/index7.shtml" target="_blank">7</A> <A href="http://www.chinesewings.com/eurofootball/news/italy/index8.shtml" target="_blank">8</A> <A href="http://www.chinesewings.com/eurofootball/news/italy/index9.shtml" target="_blank">9</A> <A href="http://www.chinesewings.com/eurofootball/news/italy/index10.shtml" target="_blank">10</A> <A href="http://www.chinesewings.com/eurofootball/news/italy/index11.shtml" target="_blank">11</A> <A href="http://www.chinesewings.com/eurofootball/news/italy/index12.shtml" target="_blank">12</A> <A href="http://www.chinesewings.com/eurofootball/news/italy/index13.shtml" target="_blank">13</A></div></TD>
+                                  <TD width="29%" align="right"><A href="http://www.chinesewings.com/eurofootball/news/italy/" target="_blank">&gt;&gt;   更多意甲新闻</A></TD>
+                                </TR>
+                              </TBODY>
+                          </TABLE></TD>
+                        </TR>
+                      </TBODY>
+                    </TABLE>
+                </DIV></TD>
+              </TR>
+              <TR>
+                <TD vAlign="center" borderColor="#ffffff" align="middle" bgColor="#ffffff"><DIV align="center">
+                    <TABLE cellSpacing="1" cellPadding="4" width="100%" border="0">
+                      <TBODY>
+                        <TR>
+                          <TD vAlign="center" align="middle" width="100%" bgColor="#EFFFE7"><div align="center"><strong><a name="dj"></a>德甲新闻</strong></div></TD>
+                        </TR>
+                      </TBODY>
+                    </TABLE>
+                </DIV></TD>
+              </TR>
+              <TR>
+                <TD vAlign="top" align="left"><DIV>
+                    <TABLE cellSpacing="2" width="100%" border="0">
+                      <TBODY>
+                        <TR>
+                          <TD vAlign="top" width="100%"><TABLE cellPadding="2" width="100%" border="0">
+                              <TBODY>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060305052119309&tpe=germany" target="_blank">图文:汉堡终结拜仁19连胜</A> [03-05]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060303210575935&tpe=germany" target="_blank">巴拉克否认和切尔西接触 世界杯后才有定论</A> [03-03]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060227230383007&tpe=germany" target="_blank">德甲-沙尔克胜纽伦堡 多特蒙德负比勒费尔德</A> [02-27]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060227230282968&tpe=germany" target="_blank">德甲-拜仁5-2灭法兰克福 双K发威不莱梅完胜</A> [02-27]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060220221580157&tpe=germany" target="_blank">德甲-巴拉克终场前头球破门 拜仁客场1-1汉诺威96</A> [02-20]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=200602150007466&tpe=germany" target="_blank">拜仁巴拉克经纪人披露 德国战神下周宣布去留 </A>[02-15]</TD>
+                                </TR>
+                              </TBODY>
+                          </TABLE></TD>
+                        </TR>
+                        <TR>
+                          <TD colSpan="2"><TABLE width="100%">
+                              <TBODY>
+                                <TR>
+                                  <TD width="72%" align="left"><div align="right"><A href="http://www.chinesewings.com/eurofootball/news/germany/index2.shtml" target="_blank">2</A> <A href="http://www.chinesewings.com/eurofootball/news/germany/index3.shtml" target="_blank">3</A> <A href="http://www.chinesewings.com/eurofootball/news/germany/index4.shtml" target="_blank">4</A> <A href="http://www.chinesewings.com/eurofootball/news/germany/index5.shtml" target="_blank">5</A> <A href="http://www.chinesewings.com/eurofootball/news/germany/index6.shtml" target="_blank">6</A> <A href="http://www.chinesewings.com/eurofootball/news/germany/index7.shtml" target="_blank">7</A> <A href="http://www.chinesewings.com/eurofootball/news/germany/index8.shtml" target="_blank">8</A></div></TD>
+                                  <TD width="28%" align="right"><A href="http://www.chinesewings.com/eurofootball/news/germany/" target="_blank">&gt;&gt;   更多德甲新闻</A></TD>
+                                </TR>
+                              </TBODY>
+                          </TABLE></TD>
+                        </TR>
+                      </TBODY>
+                    </TABLE>
+                </DIV></TD>
+              </TR>
+              <TR>
+                <TD vAlign="center" borderColor="#ffffff" align="middle" bgColor="#ffffff"><DIV align="center">
+                    <TABLE cellSpacing="1" cellPadding="4" width="100%" border="0">
+                      <TBODY>
+                        <TR>
+                          <TD vAlign="center" align="middle" width="100%" bgColor="#EFFFE7"><div align="center"><strong><a name="xj"></a>西甲新闻</strong></div></TD>
+                        </TR>
+                      </TBODY>
+                    </TABLE>
+                </DIV></TD>
+              </TR>
+              <TR>
+                <TD vAlign="top" align="left"><DIV>
+                    <TABLE cellSpacing="2" width="100%" border="0">
+                      <TBODY>
+                        <TR>
+                          <TD vAlign="top" width="100%"><TABLE cellPadding="2" width="100%" border="0">
+                              <TBODY>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060303210976158&tpe=spain" target="_blank">马丁正式出任皇马主席 推翻巨星重招老臣</A> [03-03]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060227232684363&tpe=spain" target="_blank">西甲-皇马1-2遭马洛卡逆转 联赛六连胜被终结</A> [02-27]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060227232284165&tpe=spain" target="_blank">西甲-小罗点杀拉尔森进球 巴塞罗那复仇萨拉戈萨</A> [02-27]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060221192369792&tpe=spain" target="_blank">阿根廷新一代球王梅西 找节奏也找到了进球</A> [02-21]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060220222080457&tpe=spain" target="_blank">冠军杯前不留体力 西甲3强"非赢不可"大血拼</A> [02-20]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060220221580116&tpe=spain" target="_blank">西甲-劳尔重返赛场 皇马3-0阿拉维斯获六连胜</A> [02-20]</TD>
+                                </TR>
+                              </TBODY>
+                          </TABLE></TD>
+                        </TR>
+                        <TR>
+                          <TD colSpan="2"><TABLE width="100%">
+                              <TBODY>
+                                <TR>
+                                  <TD width="71%" align="left"><div align="right"><A href="http://www.chinesewings.com/eurofootball/news/spain/index2.shtml" target="_blank">2</A> <A href="http://www.chinesewings.com/eurofootball/news/spain/index3.shtml" target="_blank">3</A> <A href="http://www.chinesewings.com/eurofootball/news/spain/index4.shtml" target="_blank">4</A> <A href="http://www.chinesewings.com/eurofootball/news/spain/index5.shtml" target="_blank">5</A> <A href="http://www.chinesewings.com/eurofootball/news/spain/index6.shtml" target="_blank">6</A> <A href="http://www.chinesewings.com/eurofootball/news/spain/index7.shtml" target="_blank">7</A> <A href="http://www.chinesewings.com/eurofootball/news/spain/index8.shtml" target="_blank">8</A> <A href="http://www.chinesewings.com/eurofootball/news/spain/index9.shtml" target="_blank">9</A> <A href="http://www.chinesewings.com/eurofootball/news/spain/index10.shtml" target="_blank">10</A> <A href="http://www.chinesewings.com/eurofootball/news/spain/index11.shtml" target="_blank">11</A> <A href="http://www.chinesewings.com/eurofootball/news/spain/index12.shtml" target="_blank">12</A> <A href="http://www.chinesewings.com/eurofootball/news/spain/index13.shtml" target="_blank">13</A></div></TD>
+                                  <TD width="29%" align="right"><A href="http://www.chinesewings.com/eurofootball/news/spain/" target="_blank">&gt;&gt;   更多西甲新闻</A></TD>
+                                </TR>
+                              </TBODY>
+                          </TABLE></TD>
+                        </TR>
+                      </TBODY>
+                    </TABLE>
+                </DIV></TD>
+              </TR>
+              <TR>
+                <TD vAlign="center" borderColor="#ffffff" align="middle" bgColor="#ffffff"><DIV align="center">
+                    <TABLE cellSpacing="1" cellPadding="4" width="100%" border="0">
+                      <TBODY>
+                        <TR>
+                          <TD vAlign="center" align="middle" width="100%" bgColor="#EFFFE7"><div align="center"><strong><a name="fj"></a>法甲新闻</strong></div></TD>
+                        </TR>
+                      </TBODY>
+                    </TABLE>
+                </DIV></TD>
+              </TR>
+              <TR>
+                <TD vAlign="top" align="left"><DIV>
+                    <TABLE cellSpacing="2" width="100%" border="0">
+                      <TBODY>
+                        <TR>
+                          <TD vAlign="top" width="100%"><TABLE cellPadding="2" width="100%" border="0">
+                              <TBODY>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060301215378782&tpe=france" target="_blank">球迷团体屡现激烈冲突 "流氓"乱舞法甲赛场</A> [03-01]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060113212176864&tpe=france" target="_blank">法甲最大牌外援驾临 波波成摩纳哥新国王</A> [01-13]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060111201472892&tpe=france" target="_blank">AC米兰前锋维埃里正式加盟摩纳哥 为世界杯远走法国</A> [01-11]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20051121173063044&tpe=france" target="_blank">法甲第15轮综合:巴黎圣日耳曼击败波尔多升至第2</A> [11-21]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20051107204374620&tpe=france" target="_blank">法甲:巴黎摩纳哥互交白卷 马赛爆冷净吞三弹</A> [11-07]</TD>
+                                </TR>
+                              </TBODY>
+                          </TABLE></TD>
+                        </TR>
+                        <TR>
+                          <TD colSpan="2"><TABLE width="100%">
+                              <TBODY>
+                                <TR>
+                                  <TD width="71%" align="left"><div align="right"><A href="http://www.chinesewings.com/eurofootball/news/france/index2.shtml" target="_blank">2</A> <A href="http://www.chinesewings.com/eurofootball/news/france/index3.shtml" target="_blank">3</A></div></TD>
+                                  <TD width="29%" align="right"><A href="http://www.chinesewings.com/eurofootball/news/france/" target="_blank">&gt;&gt;   更多法甲新闻</A></TD>
+                                </TR>
+                              </TBODY>
+                          </TABLE></TD>
+                        </TR>
+                      </TBODY>
+                    </TABLE>
+                </DIV></TD>
+              </TR>
+              <TR>
+                <TD vAlign="center" borderColor="#ffffff" align="middle" bgColor="#ffffff"><DIV align="center">
+                    <TABLE cellSpacing="1" cellPadding="4" width="100%" border="0">
+                      <TBODY>
+                        <TR>
+                          <TD vAlign="center" align="middle" width="100%" bgColor="#EFFFE7"><div align="center"><strong><a name="gjb"></a>冠军杯新闻</strong></div></TD>
+                        </TR>
+                      </TBODY>
+                    </TABLE>
+                </DIV></TD>
+              </TR>
+              <TR>
+                <TD vAlign="top" align="left"><DIV>
+                    <TABLE cellSpacing="2" width="100%" border="0">
+                      <TBODY>
+                        <TR>
+                          <TD vAlign="top" width="100%"><TABLE cellPadding="2" width="100%" border="0">
+                              <TBODY>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060223222680785&tpe=champion" target="_blank">冠军杯-斯坦克鲁斯破门 国际米兰2-2平阿贾克斯</A> [02-23]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060223222580725&tpe=champion" target="_blank">图文:冠军杯-埃托奥进球 巴塞罗那取胜10人切尔西</A> [02-23]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060223222380630&tpe=champion" target="_blank">冠军杯-终场前黑色5分钟 尤文图斯惜败不莱梅</A> [02-23]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060223222280577&tpe=champion" target="_blank">冠军杯-里克尔梅进球 比利亚雷亚尔平流浪者</A> [02-23]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060223222180491&tpe=champion" target="_blank">冠军杯-里昂10人作战 客场1-0险胜埃因霍温</A> [02-23]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060223222080407&tpe=champion" target="_blank">冠军杯-亨利单骑闯关 阿森纳客场1-0胜皇马</A> [02-23]</TD>
+                                </TR>
+                              </TBODY>
+                          </TABLE></TD>
+                        </TR>
+                        <TR>
+                          <TD colSpan="2"><TABLE width="100%">
+                              <TBODY>
+                                <TR>
+                                  <TD width="71%" align="left"><div align="right"><A href="http://www.chinesewings.com/eurofootball/news/champion/index2.shtml" target="_blank">2</A> <A href="http://www.chinesewings.com/eurofootball/news/champion/index3.shtml" target="_blank">3</A> <A href="http://www.chinesewings.com/eurofootball/news/champion/index4.shtml" target="_blank">4</A> <A href="http://www.chinesewings.com/eurofootball/news/champion/index5.shtml" target="_blank">5</A> <A href="http://www.chinesewings.com/eurofootball/news/champion/index6.shtml" target="_blank">6</A> <A href="http://www.chinesewings.com/eurofootball/news/champion/index7.shtml" target="_blank">7</A> <A href="http://www.chinesewings.com/eurofootball/news/champion/index8.shtml" target="_blank">8</A></div></TD>
+                                  <TD width="29%" align="right"><A href="http://www.chinesewings.com/eurofootball/news/champion/" target="_blank">&gt;&gt;   更多冠军杯新闻</A></TD>
+                                </TR>
+                              </TBODY>
+                          </TABLE></TD>
+                        </TR>
+                      </TBODY>
+                    </TABLE>
+                </DIV></TD>
+              </TR>
+              <TR>
+                <TD vAlign="center" borderColor="#ffffff" align="middle" bgColor="#ffffff"><DIV align="center">
+                    <TABLE cellSpacing="1" cellPadding="4" width="100%" border="0">
+                      <TBODY>
+                        <TR>
+                          <TD vAlign="center" align="middle" width="100%" bgColor="#EFFFE7"><div align="center"><strong><a name="lmb"></a>联盟杯新闻</strong></div></TD>
+                        </TR>
+                      </TBODY>
+                    </TABLE>
+                </DIV></TD>
+              </TR>
+              <TR>
+                <TD vAlign="top" align="left"><DIV>
+                    <TABLE cellSpacing="2" width="100%" border="0">
+                      <TBODY>
+                        <TR>
+                          <TD vAlign="top" width="100%"><TABLE cellPadding="2" width="100%" border="0">
+                              <TBODY>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060217195071409&tpe=uefacup" target="_blank">联盟杯摩纳哥客场意外失利 维耶里期待主场再翻盘</A> [02-17]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20060217194270941&tpe=uefacup" target="_blank">联盟杯-米德尔斯堡力擒斯图加特 巴勒莫汉堡客场负</A> [02-17]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20051216230182916&tpe=uefacup" target="_blank">联盟杯抽签-罗马会比利时劲旅布鲁日 米堡对斯图加特</A> [12-16]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20051215211576540&tpe=uefacup" target="_blank">图文:联盟杯-罗马3-1胜巴塞尔出线   斯图加特博尔顿晋级</A> [12-15]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"><A href="http://www.chinesewings.com/cgi-bin/eurofootball/admin.cgi?job=viewnews&newsid=20051202233785067&tpe=uefacup" target="_blank">欧洲联盟杯-卡萨诺失点球罗马负 卫冕冠军遭淘汰</A> [12-02]</TD>
+                                </TR>
+                              </TBODY>
+                          </TABLE></TD>
+                        </TR>
+                        <TR>
+                          <TD colSpan="2"><TABLE width="100%">
+                              <TBODY>
+                                <TR>
+                                  <TD width="71%" align="left"><div align="right"><A href="http://www.chinesewings.com/eurofootball/news/uefacup/index2.shtml" target="_blank">2</A></div></TD>
+                                  <TD width="29%" align="right"><A href="http://www.chinesewings.com/eurofootball/news/uefacup/" target="_blank">&gt;&gt;   更多联盟杯新闻</A></TD>
+                                </TR>
+                              </TBODY>
+                          </TABLE></TD>
+                        </TR>
+                      </TBODY>
+                    </TABLE>
+                </DIV></TD>
+              </TR>
+              <TR>
+                <TD vAlign="center" borderColor="#ffffff" align="middle" bgColor="#ffffff"><DIV align="center">
+                    <TABLE cellSpacing="1" cellPadding="4" width="100%" border="0">
+                      <TBODY>
+                        <TR>
+                          <TD vAlign="center" align="middle" width="100%" bgColor="#EFFFE7"><div align="center"><strong><a name="sjb"></a>世界杯新闻</strong></div></TD>
+                        </TR>
+                      </TBODY>
+                    </TABLE>
+                </DIV></TD>
+              </TR>
+              <TR>
+                <TD vAlign="top" align="left"><DIV>
+                    <TABLE cellSpacing="2" width="100%" border="0">
+                      <TBODY>
+                        <TR>
+                          <TD vAlign="top" width="100%"><TABLE cellPadding="2" width="100%" border="0">
+                              <TBODY>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"> <a href="http://www.ffire.com">坦桑尼亚球迷将获"免费"的世界杯赛门票 [03-03]</a></TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"> 帕雷拉:巴西不能轻视世界杯对手克罗地亚队 [03-03]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"> 杰拉德1年难有休息机会 球员爱国也要惜身体 [03-03]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"> 两度落后两度扳平 西班牙3-2险胜科特迪瓦 [03-03]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"> 荷兰小胜仍遭指责 巴斯腾接受批评责备球队 [03-03]</TD>
+                                </TR>
+                                <TR>
+                                  <TD vAlign="top" width="100%"><IMG src="file:///D|/数据/葛艳玲/网站建设/书/xch3/li3/image/coin.gif" alt="49" width="10" height="10" border="0"> 热身赛-梅西传射难救主 阿根廷负克罗地亚 [03-03]</TD>
+                                </TR>
+                              </TBODY>
+                          </TABLE></TD>
+                        </TR>
+                        <TR>
+                          <TD colSpan="2"><TABLE width="100%">
+                              <TBODY>
+                                <TR>
+                                  <TD width="71%" align="left"><div align="right">2 3 4 5 6 7 8</div></TD>
+                                  <TD width="29%" align="right">&gt;&gt;   更多世界杯新闻</TD>
+                                </TR>
+                              </TBODY>
+                          </TABLE></TD>
+                        </TR>
+                      </TBODY>
+                    </TABLE>
+                </DIV></TD>
+              </TR>
+            </table></td>
+          </tr>
+          
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+        </table>
+    </div></td>
+  </tr>
+</table>
+<div align="center">我 的 足 球 网 版 权 所 有<br>
+  Copyright 2006 SunnyDream.All Rights Reserved.
+</div>
+
+<map name="Map">
+<area shape="circle" coords="119,69,6" href="#"><area shape="rect" coords="46,56,62,73" href="#"><area shape="poly" coords="99,22,115,20,127,25,140,30,130,38,117,48,109,58,99,55,93,55,88,61,80,72,73,61,67,51,74,34,79,24" href="#">
+</map></body>
+</html>
